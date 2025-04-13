@@ -1,2 +1,4 @@
+com\example\repository\BookRepository.class
 com\example\BookserviceApplication$HelloController.class
 com\example\BookserviceApplication.class
+com\example\model\Book.class
