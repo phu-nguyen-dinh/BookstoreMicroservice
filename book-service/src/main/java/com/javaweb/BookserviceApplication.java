@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class BookserviceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(BookserviceApplication.class, args); // Start the Spring Boot application
+        SpringApplication.run(BookserviceApplication.class, args);
     }
 
     // 👇 Controller test API

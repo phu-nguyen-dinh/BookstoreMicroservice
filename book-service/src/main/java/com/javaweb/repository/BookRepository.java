@@ -7,5 +7,5 @@ import com.javaweb.model.dto.BookDTO;
 
 @Repository
 public interface BookRepository extends JpaRepository<BookDTO, Long> {
- 
-} 
+    BookDTO findByTitle(String title); // tìm kiếm theo tên sách
+}
