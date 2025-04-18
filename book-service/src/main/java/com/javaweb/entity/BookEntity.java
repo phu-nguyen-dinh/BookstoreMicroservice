@@ -1,4 +1,6 @@
 package com.javaweb.entity;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
 import lombok.Getter;
@@ -16,10 +18,14 @@ public class BookEntity {
 
     @Column(name = "title", nullable = false)
     private String title;
-    @Column(name = "author_id", nullable = false)
-    private Long authorID;
-    @Column(name = "genre_id", nullable = false)
+    @Column(name = "price", nullable = false) 
     private Integer price;
     @Column(name = "quantity", nullable = false)
     private Integer quantity;
+
+    @ManyToOne
+    @JoinColumn(name = "author_id", referencedColumnName = "id", insertable = false, updatable = false)
+    @JsonBackReference
+    private AuthorEntity author;
+
 }
