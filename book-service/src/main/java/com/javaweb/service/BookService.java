@@ -3,15 +3,15 @@ package com.javaweb.service;
 import java.util.List;
 import java.util.Optional;
 
-import com.javaweb.entity.BookEntity;
+import com.javaweb.model.dto.BookDTO;
 
-public interface BookService { // định nghĩa các phương thức cho BookService
-    public BookEntity addBook(BookEntity book);
-    public BookEntity updateBook(Long id, BookEntity bookDetails);
+public interface BookService {
+    public BookDTO addBook(BookDTO book);
+    public BookDTO updateBook(Long id, BookDTO bookDetails);
     public void deleteBook(Long id);    
-    public Optional<BookEntity> getBookById(Long id);
-    public List<BookEntity> getAllBooks();
-    public List<BookEntity> getBooksByGenre(String genre);
-    public List<BookEntity> getBooksByAuthor(String author);
-    public BookEntity getBooksByTitle(String title);
+    public Optional<BookDTO> getBookById(Long id);
+    public List<BookDTO> getAllBooks();
+    public List<BookDTO> getBooksByGenre(String genre);
+    public List<BookDTO> getBooksByAuthor(String author);
+    public BookDTO getBooksByTitle(String title);
 }

@@ -1,5 +1,7 @@
 package com.javaweb.model.dto;
 
+import java.util.List;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,4 +14,5 @@ public class BookDTO {
     private Long authorID;
     private Integer price;
     private Integer quantity;
+    private List<Long> genreID;
 } 

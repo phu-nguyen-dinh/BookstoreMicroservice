@@ -10,6 +10,6 @@ import com.javaweb.entity.BookEntity;
 @Repository
 public interface BookRepository extends JpaRepository<BookEntity, Long> {
     BookEntity findByTitle(String title);
-    List<BookEntity> findByAuthor(String author);
-    List<BookEntity> findByGenre(String genre);
+    List<BookEntity> findByAuthor_AuthorName(String authorName);
+    List<BookEntity> findByGenres_GenreName(String genreName);
 }

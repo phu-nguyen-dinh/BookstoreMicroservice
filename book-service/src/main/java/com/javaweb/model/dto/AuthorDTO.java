@@ -5,6 +5,6 @@ import lombok.Setter;
 @Getter
 @Setter 
 public class AuthorDTO {
-    private long id;
+    private Long id;
     private String authorName;
 }
