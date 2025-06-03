@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BookstoreMicroservice.iml" filepath="$PROJECT_DIR$/BookstoreMicroservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/book-service/book-service.iml" filepath="$PROJECT_DIR$/book-service/book-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/backend/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/book-service/book-service.iml" filepath="$PROJECT_DIR$/backend/book-service/book-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/backend/discovery-server/discovery-server.iml" />
     </modules>
   </component>
 </project>
