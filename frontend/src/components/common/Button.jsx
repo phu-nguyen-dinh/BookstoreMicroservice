@@ -1,14 +1,12 @@
-import React from "react";
-import "../../styles/components/Button.scss"
+import React from 'react';
 
-const Button = ({ text, onClick, className = "", disabled = false }) => {
+const Button = ({ label, onClick, variant, icon }) => {
   return (
-    <button
-      className={`custom-button ${className}`}
-      onClick={onClick}
-      disabled={disabled}
-    >
-      {text}
+    <button className={`btn ${variant}`} onClick={onClick}>
+      {icon && <span>{icon}</span>}
+      {label}
     </button>
   );
-}
+};
+
+export default Button;
