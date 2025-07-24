@@ -9,4 +9,6 @@ public class UserDTO {
     Long id;
     String userName;
     String passWord;
+    String first_name;
+    String last_name;
 }

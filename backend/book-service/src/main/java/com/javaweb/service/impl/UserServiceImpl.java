@@ -50,6 +50,8 @@ public class UserServiceImpl implements UserService {
         }
         existingUser.setUserName(dto.getUserName());
         existingUser.setPassWord(dto.getPassWord());
+        existingUser.setFirst_name(dto.getFirst_name());
+        existingUser.setLast_name(dto.getLast_name());
 
         UserEntity updateUser = userRepository.save(existingUser);
 
