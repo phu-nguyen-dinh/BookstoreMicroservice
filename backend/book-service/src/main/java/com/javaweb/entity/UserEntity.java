@@ -19,4 +19,10 @@ public class UserEntity {
 
     @Column(name="pass_word", nullable = false)
     String passWord;
+
+    @Column(name="first_name", nullable = false)
+    String first_name;
+
+    @Column(name = "last_name", nullable = false)
+    String last_name;
 }
